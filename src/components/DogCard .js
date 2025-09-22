@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useTheme } from '../context/ThemeContext';
 const DogCard = ({ dog }) => {
   return (
     <div className="dog-card">

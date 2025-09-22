@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { fetchDogs } from '../services/api';
 import DogList from '../components/DogList';
 import SearchFilter from '../components/SearchFilter';
+import { useTheme } from '../context/ThemeContext';
 
 const Catalog = () => {
+    const { isDarkMode } = useTheme();
   const [dogs, setDogs] = useState([]);
   const [filteredDogs, setFilteredDogs] = useState([]);
   const [loading, setLoading] = useState(true);

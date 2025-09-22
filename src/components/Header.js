@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../context/ThemeContext';
 
 const Header = () => {
+  const { isDarkMode, toggleTheme } = useTheme();
+
   return (
     <header className="header">
       <div className="container">
@@ -11,6 +14,13 @@ const Header = () => {
         <nav className="nav">
           <Link to="/">Home</Link>
           <Link to="/catalog">Dog Catalog</Link>
+          <button 
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+          >
+            {isDarkMode ? '☀️' : '🌙'}
+          </button>
         </nav>
       </div>
     </header>

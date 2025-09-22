@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../context/ThemeContext';
 
 const Home = () => {
+    const { isDarkMode } = useTheme();
   return (
     <div className="home-page">
       <section className="hero">

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { fetchDogs } from '../services/api';
-
+import { useTheme } from '../context/ThemeContext';
 const DogDetail = () => {
+    const { isDarkMode } = useTheme();
   const { id } = useParams();
   const [dog, setDog] = useState(null);
   const [loading, setLoading] = useState(true);

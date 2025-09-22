@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import DogCard from './DogCard ';
+import { useTheme } from '../context/ThemeContext';
 
 const DogList = ({ dogs }) => {
   if (dogs.length === 0) {
