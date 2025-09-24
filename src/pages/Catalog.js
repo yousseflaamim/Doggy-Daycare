@@ -4,6 +4,7 @@ import { fetchDogs } from '../services/api';
 import DogList from '../components/DogList';
 import SearchFilter from '../components/SearchFilter';
 import { useTheme } from '../context/ThemeContext';
+import '../styles/Catalog.css'
 
 const Catalog = () => {
     const { isDarkMode } = useTheme();

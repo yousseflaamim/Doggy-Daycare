@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* Light Mode */
+body.light-mode {
+  background: #f7fafc;
+  color: #2d3748;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #0f1419;
+  color: #e2e8f0;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.light-mode .btn-primary {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+}
+
+.dark-mode .btn-primary {
+  background: linear-gradient(45deg, #8b9df3, #9d6de3);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.light-mode .btn-secondary {
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+}
+
+.dark-mode .btn-secondary {
+  background: rgba(102, 126, 234, 0.2);
+  color: #8b9df3;
+}
+
+/* Loading and Error States */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 1.2rem;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+}
+
+.error button {
+  margin-top: 1rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Large Desktops (1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+    padding: 0 30px;
+  }
+}
+
+/* Large Phones (481px to 768px) */
+@media (max-width: 768px) {
+  body {
+    padding-top: 100px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Phones (480px and down) */
+@media (max-width: 480px) {
+  body {
+    padding-top: 120px;
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 10px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+  
+  .loading {
+    height: 150px;
+    font-size: 1rem;
+  }
+  
+  .error {
+    padding: 1.5rem;
+  }
+  
+  .no-results {
+    padding: 2rem;
+    font-size: 1rem;
+  }
+}

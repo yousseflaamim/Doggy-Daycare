@@ -1,0 +1,58 @@
+/* Dog Card */
+.dog-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.light-mode .dog-card {
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dark-mode .dog-card {
+  background: #1a202c;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+}
+
+.light-mode .dog-card:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.dark-mode .dog-card:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.dog-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.dog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dog-card:hover .dog-image img {
+  transform: scale(1.1);
+}
+
+.dog-info {
+  padding: 1.5rem;
+}
+
+.dog-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.dog-info p {
+  margin-bottom: 0.3rem;
+  opacity: 0.8;
+}
