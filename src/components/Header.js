@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
+import '../styles/Header.css';
+
+
 
 const Header = () => {
   const { isDarkMode, toggleTheme } = useTheme();

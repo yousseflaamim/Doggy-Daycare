@@ -1,0 +1,41 @@
+/* Catalog Page */
+.catalog-page {
+  padding: 100px 0 2rem;
+  min-height: 100vh;
+}
+
+.light-mode .catalog-page {
+  background: #f7fafc;
+}
+
+.dark-mode .catalog-page {
+  background: #0f1419;
+}
+
+.catalog-page h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.light-mode .catalog-page h1 {
+  color: #2d3748;
+}
+
+.dark-mode .catalog-page h1 {
+  color: #e2e8f0;
+}
+
+.dogs-count {
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+/* Responsive Catalog */
+@media (max-width: 768px) {
+  .catalog-page {
+    padding: 120px 0 2rem;
+  }
+}

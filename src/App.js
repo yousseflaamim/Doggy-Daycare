@@ -5,7 +5,8 @@ import Home from './pages/Home';
 import Catalog from './pages/Catalog';
 import DogDetail from './pages/DogDetail';
 import { ThemeProvider } from './context/ThemeContext';
-import './App.css';
+import './styles/globals.css'
+
 
 function App() {
   return (

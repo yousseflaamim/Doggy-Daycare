@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useTheme } from '../context/ThemeContext';
+import '../styles/components/SearchFilter.css'
 
 const SearchFilter = ({ dogs = [], onFilter }) => {
   const [filters, setFilters] = useState({
